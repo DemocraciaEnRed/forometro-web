@@ -16,7 +16,6 @@
 export default {
   async fetch () {
     const companies = await this.$strapi.$acompanamientos.find()
-    console.log(companies)
     this.companies = companies
   },
   data () {

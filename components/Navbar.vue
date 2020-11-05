@@ -1,35 +1,35 @@
 <template>
   <div>
-     <b-navbar :fixed-top="true" :shadow="true" wrapper-class="container">
-        <template slot="brand">
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <img
-                    src="~/assets/logo-navbar.svg"
-                    alt="Foro Metropolitano"
-                >
-            </b-navbar-item>
-        </template>
-        <template slot="start">
-            <b-navbar-item href="#">
-                En vivo&nbsp;<i class="fas fa-circle has-text-primary"></i>
-            </b-navbar-item>
-            <b-navbar-item href="#">
-                Inicio
-            </b-navbar-item>
-            <b-navbar-item href="#">
-                Stands
-            </b-navbar-item>
-        </template>
+    <b-navbar :fixed-top="true" :shadow="true" wrapper-class="container">
+      <template slot="brand">
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <img
+            src="~/assets/logo-navbar.svg"
+            alt="Foro Metropolitano"
+          >
+        </b-navbar-item>
+      </template>
+      <template slot="start">
+        <b-navbar-item href="#">
+          En vivo&nbsp;<i class="fas fa-circle has-text-primary" />
+        </b-navbar-item>
+        <b-navbar-item href="#">
+          Inicio
+        </b-navbar-item>
+        <b-navbar-item href="#">
+          Stands
+        </b-navbar-item>
+      </template>
 
-        <template slot="end">
-            <b-navbar-item tag="div">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>INSCRIBITE</strong>
-                    </a>
-                </div>
-            </b-navbar-item>
-        </template>
+      <template slot="end">
+        <b-navbar-item tag="div">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>INSCRIBITE</strong>
+            </a>
+          </div>
+        </b-navbar-item>
+      </template>
     </b-navbar>
     <!-- <nav class="level">
       <div class="level-left">
@@ -53,7 +53,7 @@
         </p>
       </div>
     </nav> -->
-    <div class="line-top"></div>
+    <div class="line-top" />
     <br>
     <div class="columns is-vcentered">
       <div class="column">
@@ -64,7 +64,7 @@
       </div>
     </div>
     <br>
-    <div class="line-bottom"></div>
+    <div class="line-bottom" />
   </div>
 </template>
 

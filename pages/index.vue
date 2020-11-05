@@ -10,16 +10,20 @@
       <br>
       <div class="who-container is-clearfix">
         <img src="~/assets/who-right.svg" class="image who-right is-pulled-right" alt="">
-        <div class="who-left"></div>
+        <div class="who-left" />
       </div>
       <div class="content">
-        <h1 class="title is-2">Bienvenida</h1>
+        <h1 class="title is-2">
+          Bienvenida
+        </h1>
         <div v-html="$md.render(homepage.value)" />
         <br>
         <div v-html="$md.render(homepage.about)" />
       </div>
 
-      <h1 class="title is-2">Acompañan</h1>
+      <h1 class="title is-2">
+        Acompañan
+      </h1>
       <Acompanamiento />
     </div>
   </section>
@@ -31,7 +35,6 @@ export default {
   name: 'HomePage',
   async asyncData ({ params, $strapi }) {
     const homepage = await $strapi.$homepage.find()
-    console.log(homepage.imagenPrincipal)
     return { homepage }
   },
   data () {
