@@ -94,3 +94,5 @@ sw.*
 
 # Mongo dockerfiles
 .mongo
+
+docker-compose.*.yml
