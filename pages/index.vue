@@ -2,9 +2,9 @@
 <template>
   <section class="section">
     <div class="container">
-      <Navbar :cover="homepage.imagenPrincipal.large" />
+      <Navbar/>
       <br>
-      <img :src="$strapiAsset(homepage.imagenPrincipal.url)" class="image is-fullwidth" alt="">
+      <img :src="$strapiAsset(homepage.coverPrincipal.url)" class="image is-fullwidth" alt="">
       <br>
       <a href="#"><img src="~/assets/register.svg" class="image is-fullwidth" alt=""></a>
       <br>
@@ -16,15 +16,17 @@
         <h1 class="title is-2">
           Bienvenida
         </h1>
-        <div v-html="$md.render(homepage.value)" />
+        <div v-html="$md.render(homepage.introduccion)" />
         <br>
-        <div v-html="$md.render(homepage.about)" />
+        <div v-html="$md.render(homepage.acercaDe)" />
       </div>
 
       <h1 class="title is-2">
         Acompañan
       </h1>
       <Acompanamiento />
+      <MainStage :youtube-id="homepage.youtubeId" v-if="homepage.youtubeId" />
+      <Agenda />
     </div>
   </section>
 </template>

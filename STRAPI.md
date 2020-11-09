@@ -1,10 +1,22 @@
 # Strapi
 
+### Collection Types
+
+##### Acompanamiento
+
+##### Participantes
+
+##### Eventos
+
 ### Single Types
 
 ##### Homepage
 
 ```
-introduction - Rich text - required
-youtube-id - Simple text
+introduccion - rich text - required
+acercaDe - rich text
+fechaEvento - datetime
+coverPrincipal - media (unique)
+youtubeId - simple text
 ```
+

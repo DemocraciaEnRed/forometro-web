@@ -45,15 +45,15 @@ export default {
     '@nuxtjs/markdownit'
   ],
   publicRuntimeConfig: {
-    strapiURL: process.env.STRAPI_URL
+    strapiURL: process.env.STRAPI_URL || 'http://localhost:1337'
   },
   privateRuntimeConfig: {
     // strapiUrl: process.env.STRAPI_URL
   },
 
   strapi: {
-    entities: ['homepage', 'acompanamientos'],
-    url: 'http://localhost:1337'
+    entities: ['homepage', 'acompanamientos','eventos'],
+    url: process.env.STRAPI_URL || 'http://localhost:1337'
   },
 
   markdownit: {
