@@ -7,4 +7,5 @@ export default ({ app, $config }, inject) => {
     }
     return `${date.getHours()}:${date.getMinutes()} Hs`
   })
+  // inject('', )=
 }

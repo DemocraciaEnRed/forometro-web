@@ -11,6 +11,13 @@
       </h4>
     </div>
     <div v-else>
+      <b-tabs type="is-boxed" size="is-large">
+        <b-tab-item>
+          <template #header>
+            aaa
+          </template>
+        </b-tab-item>
+      </b-tabs>
       <div v-for="evento in eventos" :key="`evento-${evento.id}`" class="media">
         <div class="media-left">
           <p class="is-size-4">
@@ -26,9 +33,9 @@
           </div>
         </div>
         <div class="media-left">
-          <a @click="openModalParticipante" v-for="participante in evento.participantes" :key="`evento-${evento.id}-participante-${participante.id}`">
+          <a v-for="participante in evento.participantes" :key="`evento-${evento.id}-participante-${participante.id}`" @click="openModalParticipante">
             <b-tooltip :label="`${participante.nombre} ${participante.apellido}`">
-            <img :src="$strapiAsset(participante.foto.url)" class="image participante-logo is-inline-block mx-2" alt="">
+              <img :src="$strapiAsset(participante.foto.url)" class="image participante-logo is-inline-block mx-2" alt="">
             </b-tooltip>
           </a>
         </div>

@@ -58,8 +58,16 @@ export default {
 <style lang="scss" scoped>
 .slide-image-normalize {
   height: 130px;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+  margin: 10px;
+  position: relative;
+  img{
+    max-height: 60%;
+    max-width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+  }
 }
 </style>
